@@ -5,22 +5,24 @@ int main()
 {
     int n;
     int i,j;
+    
 
     cout<<"enter num: ",cin>>n;
 
     for(i = 1; i <= n; i++)
     {
-        for (j = 1; j <= n; j++)
+        
+        int space = n-i;
+        for(j = 1; j<=space; j++)
         {
-            if(j <= n-i)
-            {
-                cout<<" ";
-            }
-            else
-            {
-                cout<<"*";
-            }
+            cout<<" ";
         }
+
+        for(j = 1; j <= n; j++)
+        {
+            cout<<"* ";
+        }
+
         cout<<endl;
     }    
 

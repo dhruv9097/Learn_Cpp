@@ -10,16 +10,17 @@ int main()
 
     for(i = 1; i <= n; i++)
     {
-        for (j = 1; j <= n; j++)
+
+        int space = n-i;
+        for(j = 1; j<=space; j++)
         {
-            if(j <= n-i)
-            {
-                cout<<" ";
-            }
-            else
-            {
-                cout<<"*";
-            }
+            cout<<" ";
+        }
+
+
+        for(j = 1; j <= i; j++)
+        {
+            cout<<j<<" ";
         }
         cout<<endl;
     }    
